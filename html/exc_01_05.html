@@ -74,17 +74,17 @@ disp(freq_pitch(69));
 <span class="comment">% Calling the function with C4 as starting note.</span>
 scale_c_maj = freq_pitch(template_scale_major(60));
 disp(scale_c_maj);
-stairs(scale_c_maj);
+stairs([1:numel(scale_c_maj)]-0.5, scale_c_maj);
 title(<span class="string">'Major Scale'</span>)
 xlabel(<span class="string">'Scale Position'</span>)
 ylabel(<span class="string">'Frequency (Hz)'</span>)
-</pre><h2>Minor Scale<a name="3"></a></h2><p>Defining a template for a minor scale as an anonymous function.</p><pre class="codeinput">template_scale_minor = @(start) start + [0, 2, 3, 5, 7, 9, 11, 12];
+</pre><h2>Minor Scale<a name="3"></a></h2><p>Defining a template for a minor scale as an anonymous function.</p><pre class="codeinput">template_scale_minor = @(start) start + [0, 2, 3, 5, 7, 8, 10, 12];
 
 <span class="comment">% Calling the function with C4 as starting note.</span>
 scale_c_min = freq_pitch(template_scale_minor(60));
 disp(scale_c_min);
 figure;
-stairs(scale_c_min);
+stairs([1:numel(scale_c_min)]-0.5, scale_c_min);
 title(<span class="string">'Minor Scale'</span>)
 xlabel(<span class="string">'Scale Position'</span>)
 ylabel(<span class="string">'Frequency (Hz)'</span>)
@@ -100,7 +100,7 @@ ylabel(<span class="string">'Frequency (Hz)'</span>)
 
   Columns 1 through 7
 
-  261.6256  293.6648  311.1270  349.2282  391.9954  440.0000  493.8833
+  261.6256  293.6648  311.1270  349.2282  391.9954  415.3047  466.1638
 
   Column 8
 
@@ -125,7 +125,7 @@ template_scale_major = @(start) start + [0, 2, 4, 5, 7, 9, 11, 12];
 % Calling the function with C4 as starting note.
 scale_c_maj = freq_pitch(template_scale_major(60));
 disp(scale_c_maj);
-stairs(scale_c_maj);
+stairs([1:numel(scale_c_maj)]-0.5, scale_c_maj);
 title('Major Scale')
 xlabel('Scale Position')
 ylabel('Frequency (Hz)')
@@ -133,13 +133,13 @@ ylabel('Frequency (Hz)')
 
 %%% Minor Scale
 % Defining a template for a minor scale as an anonymous function.
-template_scale_minor = @(start) start + [0, 2, 3, 5, 7, 9, 11, 12];
+template_scale_minor = @(start) start + [0, 2, 3, 5, 7, 8, 10, 12];
 
 % Calling the function with C4 as starting note.
 scale_c_min = freq_pitch(template_scale_minor(60));
 disp(scale_c_min);
 figure;
-stairs(scale_c_min);
+stairs([1:numel(scale_c_min)]-0.5, scale_c_min);
 title('Minor Scale')
 xlabel('Scale Position')
 ylabel('Frequency (Hz)')
