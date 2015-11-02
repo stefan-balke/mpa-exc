@@ -15,7 +15,7 @@ template_scale_major = @(start) start + [0, 2, 4, 5, 7, 9, 11, 12];
 % Calling the function with C4 as starting note.
 scale_c_maj = freq_pitch(template_scale_major(60));
 disp(scale_c_maj);
-stairs(scale_c_maj);
+stairs([1:numel(scale_c_maj)]-0.5, scale_c_maj);
 title('Major Scale')
 xlabel('Scale Position')
 ylabel('Frequency (Hz)')
@@ -23,13 +23,13 @@ ylabel('Frequency (Hz)')
 
 %%% Minor Scale
 % Defining a template for a minor scale as an anonymous function.
-template_scale_minor = @(start) start + [0, 2, 3, 5, 7, 9, 11, 12];
+template_scale_minor = @(start) start + [0, 2, 3, 5, 7, 8, 10, 12];
 
 % Calling the function with C4 as starting note.
 scale_c_min = freq_pitch(template_scale_minor(60));
 disp(scale_c_min);
 figure;
-stairs(scale_c_min);
+stairs([1:numel(scale_c_min)]-0.5, scale_c_min);
 title('Minor Scale')
 xlabel('Scale Position')
 ylabel('Frequency (Hz)')
