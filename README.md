@@ -10,8 +10,11 @@ https://www.audiolabs-erlangen.de/fau/professor/mueller/teaching/ws2015_mpa
 
 The exercises are taken from the book:
 > **Meinard Müller**
+
 > Fundamentals of Music Processing – Audio, Analysis, Algorithms, Applications
+
 > ISBN: 978-3-319-21944-8, 483 p., Springer, 2015
+
 > http://music-processing.de
 
 
