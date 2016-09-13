@@ -1,3 +1,5 @@
 numpy
 matplotlib
 jupyter
+scipy
+librosa
