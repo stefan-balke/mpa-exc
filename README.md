@@ -1,14 +1,14 @@
 Music Processing Analysis - Exercise
 ------------------------------------
 
-This is a collection of supplementary material for the exercise for the 
-lecture **Music Processing Analysis, Winter Term 2015/2016**
-held by Meinard Müller.
+This is a collection of supplementary material for the accompanying exercise
+for the lecture **Music Processing Analysis, Winter Term 2016/2017**
+held by Prof. Dr. Meinard Müller.
 
 For more information visit:
-https://www.audiolabs-erlangen.de/fau/professor/mueller/teaching/2015w_mpa
+https://www.audiolabs-erlangen.de/fau/professor/mueller/teaching/2016w_mpa
 
-The exercises are taken from the book:
+Some exercises are taken from the book:
 > **Meinard Müller**
 
 > Fundamentals of Music Processing – Audio, Analysis, Algorithms, Applications
