@@ -1,0 +1,12 @@
+name: mpa_exc
+
+channels:
+    - conda-forge
+
+dependencies:
+    - python>=3.5
+    - numpy=1.11.2
+    - scipy=0.18.1
+    - jupyter
+    - librosa=0.4.3
+    - pip

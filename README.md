@@ -15,28 +15,20 @@ Some exercises are taken from the book:
 
 > ISBN: 978-3-319-21944-8, 483 p., Springer, 2015
 
-> http://music-processing.de
+> http://www.music-processing.de
 
 
-Rebuild Matlab(R) pages
+Installation
 =======================
 
-We use the `publish()` function in Matlab(R) to render the HTML output, e.g.
+To meet all the Python requirements, we recommend using Anaconda.
+
+After installing Anaconda, create the virtual environment `mpa_exc`
+by calling:
 
 ```
-publish('exc_01_05.m')
+conda env create -f environment.yml
 ```
 
-Run Jupyter Notebooks
-=====================
-
-To run the Jupyter notebooks (formerly known as IPython Notebooks),
-run `pip install -r requirements.txt` to install the needed packages.
-
-Then start a notebook instance by typing
-
-```
-jupyter notebook
-```
-
-and navigate to the path of this repository on your local machine.
+Now, run `source activate mpa_exc` to start the environment  and
+`jupyter-notebook` to start the notebook server.
